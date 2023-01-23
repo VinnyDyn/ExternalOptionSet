@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="VinnyBControls" constructor="ExternalOptionSet" version="0.0.1" display-name-key="ExternalOptionSet" description-key="ExternalOptionSet description" control-type="virtual">
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="whole_none" display-name-key="whole_none" description-key="integer_value" of-type="Whole.None" usage="bound" required="true" />
+    <property name="table" display-name-key="table" description-key="Table Logical Name" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="optionset" display-name-key="optionset" description-key="OptionSet Logical Name" of-type="SingleLine.Text" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
